@@ -1,0 +1,136 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body {
+    width: 95vw;
+    margin: 5vh 0;
+    margin-left: 5vw;
+}
+
+/* .container {
+    height: 100vh;
+} */
+
+/* ======================================================= */
+        /* ========= Styling the Nav Bar ========= */
+/* ======================================================= */
+
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10vh;
+}
+
+.navbar-container > div:first-child {
+    flex-grow: 1;
+}
+
+.grow-list {
+    flex-grow: 2;
+}
+
+.button-group {
+    flex-grow: 1;
+    text-align: center;
+}
+/* Styles for the logo */
+.navbar-container > div:first-child img{
+    height: 5vh;
+}
+
+/* Styles for the list */
+.list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.list-item {
+    font-weight: 600;
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+.list-item:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* Styles for the navbar button */
+.nav-button {
+    background: #4d4a9c;
+    opacity:0.9;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 13px;
+    padding: 10px 25px;
+}
+
+.nav-button:hover {
+    box-shadow: 0 0 2px 2px #150436cf;
+    transition-duration: 200ms;
+}
+
+
+/* ======================================================= */
+        /* =========  Styling the Banner  ========= */
+/* ======================================================= */
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.banner-container> div:first-child {
+    max-width: 30vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading-text {
+    /* text-align: center; */
+    color: #3c2f60;
+    font-weight: 600;
+    font-size: 7vh;
+    line-height: 110%;
+    margin: 5vh 0;
+    cursor: default;
+}
+
+.heading-text> span {
+    color: #7475da;
+}
+
+.description {
+    font-weight: 500;
+    font-size: 13px;
+    opacity: 0.5;
+    text-align: center;
+    margin: 5vh 0;
+}
+
+.btn {
+    margin: 5vh 0;
+}
+
+.banner-container> div:last-child{
+    justify-self: flex-end;
+    z-index: -1;
+}
+
+.banner-container> div:last-child img{
+    width: 60vw;
+}
+
+
